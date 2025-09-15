@@ -103,7 +103,7 @@ class Image extends DataObject {
         );
     }
 
-    public function forTemplate() {
+    public function forTemplate(): string {
         return $this->getTag();
     }
 
