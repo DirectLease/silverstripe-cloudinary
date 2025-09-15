@@ -20,7 +20,7 @@
     "ext-json": "*",
     "silverstripe/framework": "^5 || ^6",
     "cloudinary/cloudinary_php": "^2",
-    "nesbot/carbon": "^2"
+    "nesbot/carbon": "^3"
   },
   "extra": {
     "installer-name": "cloudinary",
