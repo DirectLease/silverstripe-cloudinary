@@ -136,7 +136,7 @@ class UploadField extends FormField implements FileHandleField {
      * @return \SilverStripe\ORM\DataObject|Image|null
      */
     public function getFile() {
-        $value = $this->Value();
+        $value = $this->value;
 
         if ($value) {
             if ($value instanceof Image && $value->exists()) return $value;
