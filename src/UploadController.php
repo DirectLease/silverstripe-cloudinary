@@ -40,13 +40,13 @@ class UploadController extends Controller {
             $thumbnail = $vars['eager'][0]['secure_url'];
 
         $image = new Image();
-        $image->PublicID = $vars['public_id'];
-        $image->Version = $vars['version'];
-        $image->Format = $vars['format'];
-        $image->eTag = $vars['etag'];
-        $image->URL = $vars['secure_url'];
-        $image->Filename = $vars['original_filename'];
-        $image->ThumbnailURL = $thumbnail;
+         $image->PublicID = strval($vars['public_id']);
+        $image->Version = strval($vars['version']);
+        $image->Format = strval($vars['format']);
+        $image->eTag = strval($vars['etag']);
+        $image->URL = strval($vars['secure_url']);
+        $image->Filename = strval($vars['original_filename']);
+        $image->ThumbnailURL = strval($thumbnail);
         $image->Size = $vars['bytes'];
         $image->Width = $vars['width'];
         $image->Height = $vars['height'];
